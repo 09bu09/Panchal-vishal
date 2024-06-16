@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Registrationm  Form</h1>
+      <div class="text-section">
+        <div class="card">
+        <label for="Full name" class="form-name">Full name</label>
+        <input type="text" class="form-input" name="Full name" required><br>
+
+        <label for="Email Address" class="form-name">Email Address</label>
+        <input type="text" class="form-input" name="Email Address" required><br>
+
+        <label for="Mobile Number" class="form-name">Mobile Number</label>
+        <input type="tel" class="form-input" name="Mobile Number" required><br>
+
+        <label for="Birthday" class="form-name">Birthday Date</label>
+        <input type="date" class="form-input" name="Birthday Date" id="Birthday" required><br>
+
+        <label for="Gender" class="form-name">Gender:-</label>
+        <label for="Gender">Male</label>
+        <input type="radio" name="Gender" value="Male" required>
+
+        <label for="Gender">Female</label>
+        <input type="radio" name="Gender" value="Female" required><br>
+
+        <label for="Address" class="form-name">Address:-</label>
+        <input type="text" class="form-input" row="10" name="Address" required><br>
+
+        <label for="Country>" class="form-name">Country:-</label>
+        <select id="Country">
+        <option value="India">India</option>
+        <option value="UK">UK</option>
+        <option value="America">America</option>
+        <option value="Caneda">Caneda</option>
+        <option value="London">London</option>
+        </select><br>
+        <button type="button" class="btn-btn">Submit</button>
+       </div>   
+      </div>
+</body>
+</html>
+<style>
+    .card{
+        background-color: white;
+        border: 1px solid black;
+        padding: 15px;
+        border-radius: 15px;
+        width: 40%;
+    }
+    .text-section{
+        display: flex;
+        align-items: center;
+        justify-content: center;    
+        top: 4%;
+        height:35rem;
+        background-color: #ff0384;
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+    }
+    h1{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ff0384;
+    }
+    .form-input{
+      width: 93%;
+      padding: 1%;
+      margin-bottom: 13px;
+      border: 1px solid black;
+      border-radius: 5px;
+    }
+    .form-name{
+      margin-top: 1rem;
+      width: 83%;
+      padding: 1%;
+      margin-bottom: 13px;
+      font-size: 18px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;;
+    }
+    .btn-btn{
+      width: 96%;
+      padding: 1%;
+      bottom: 3%;
+      margin-top: 2rem;
+      border-radius: 5px;
+      background-color: #4caf50;
+      font-size: 18px;
+      margin-left: 5px;
+    }
+    .btn-btn:hover{
+      background-color: #98ff98;
+    }
+</style>
